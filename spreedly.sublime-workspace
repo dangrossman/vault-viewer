@@ -1,0 +1,1184 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CustomView.php",
+			"settings":
+			{
+				"buffer_size": 290,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/layout.php",
+			"settings":
+			{
+				"buffer_size": 2918,
+				"line_ending": "Windows",
+				"name": "layout"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 1675,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Spreedly.php",
+			"settings":
+			{
+				"buffer_size": 3842,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/gateways.php",
+			"settings":
+			{
+				"buffer_size": 3869,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/payment_methods.php",
+			"settings":
+			{
+				"buffer_size": 5044,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"shopify",
+				"Shopify: Edit asset"
+			],
+			[
+				"shopi",
+				"Shopify: Edit asset"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Dropbox/www/spreedly/css/bootstrap.css",
+		"/C/Dropbox/www/spreedly/js/moment.min.js",
+		"/C/Dropbox/www/spreedly/Slim/Slim.php",
+		"/C/Dropbox/www/spreedly/Slim/LogWriter.php",
+		"/C/Dropbox/www/spreedly/templates/index.php",
+		"/C/Dropbox/www/spreedly/index.php",
+		"/C/Dropbox/www/improvely/apps/website/modules/main/templates/customersSuccess.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/layout/theme.liquid",
+		"/C/Dropbox/www/improvely/scripts/autobill.php",
+		"/C/Dropbox/www/improvely/apps/website/templates/layout.php",
+		"/C/Dropbox/www/improvely/apps/website/modules/main/templates/signupSuccess.php",
+		"/C/Dropbox/www/improvely/apps/website/modules/main/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/lib/model/DataSource.class.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/account/templates/reactivateSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/account/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/main/templates/welcomeSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/main/templates/indexSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/account/templates/planSuccess.php",
+		"/C/Dropbox/www/improvely/apps/website/modules/main/templates/pricingSuccess.php",
+		"/C/Dropbox/www/improvely/apps/website/modules/main/templates/thanksSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/config/routing.yml",
+		"/C/Dropbox/www/improvely/apps/app/modules/main/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/apps/iljmp/lib/dbConnFilter.php",
+		"/C/Dropbox/www/improvely/apps/iljmp/modules/go/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/apps/app/templates/layout.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/fraudSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/fraudDetailSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/personSuccess.php",
+		"/C/Dropbox/www/improvely/scripts/limit.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/realtimeSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/clicksSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/main/templates/projectSuccess.php",
+		"/C/Dropbox/www/improvely/web/css/improvely.css",
+		"/C/Dropbox/www/improvely/apps/app/templates/_header.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/main/templates/projectCodeSuccess.php",
+		"/C/Dropbox/www/improvely/web/update-prices.php",
+		"/C/Dropbox/www/improvely/scripts/update.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/tools/actions/actions.class.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/assets/style.css.liquid",
+		"/C/Dropbox/www/improvely/apps/app/lib/dbConnFilter.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/overviewNewSuccess.php",
+		"/C/Dropbox/www/improvely/web/js/highcharts.js",
+		"/C/Dropbox/www/improvely/web/js/main.js",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/overviewSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/reportSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/_click.php",
+		"/C/Dropbox/www/improvely/web/blog/wp-content/themes/improvely/style.css",
+		"/C/Dropbox/www/improvely/lib/model/Spreedly.class.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/product.liquid",
+		"/C/Dropbox/www/improvely/apps/website/modules/main/templates/adminSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/linksSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/spikesSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/peopleSearchSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/affiliates/templates/linksSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/account/templates/whiteLabelSuccess.php",
+		"/C/Dropbox/www/improvely/lib/model/Mailer.class.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/affiliates/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/config/databases.yml",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/cart.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/snippets/product-grid-item.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/snippets/col-sidenav.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/customers/login.liquid",
+		"/C/Dropbox/www/improvely/web/tax.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/customers/account.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/assets/checkout.css.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/snippets/collection-grid-item.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/assets/font-awesome.css.liquid",
+		"/C/Users/Dan/Desktop/backup2.txt",
+		"/C/Users/Dan/Desktop/backup.txt",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/customers/activate_account.liquid",
+		"/C/Dropbox/www/improvely/apps/app/modules/tools/templates/builderSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/tools/templates/linkSuccess.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/api/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/apps/iljmp/modules/track/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/apps/iljmp/modules/track/templates/scriptSuccess.php",
+		"/C/Dropbox/www/improvely/apps/website/modules/main/templates/fraudSuccess.php",
+		"/C/Dropbox/www/improvely/web/css/website.css",
+		"/C/Dropbox/www/improvely/web/css/font-awesome.css",
+		"/C/Dropbox/www/improvely/web/css/font-awesome-ie7.css",
+		"/C/Dropbox/www/improvely/apps/iljmp/modules/track/templates/shopifyScriptSuccess.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/modules/shopify/actions/actions.class.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Dropbox/www/improvely/scripts/templates/limit-warning.txt",
+		"/C/Dropbox/www/improvely/scripts/templates/limit-warning.html",
+		"/C/Dropbox/www/improvely/scripts/templates/limit-notice.html",
+		"/C/Dropbox/www/improvely/scripts/templates/limit-notice.txt",
+		"/C/Dropbox/www/improvely/.gitignore",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/_conversion.php",
+		"/C/Dropbox/www/improvely/web/js/bootstrap-tooltip.js",
+		"/C/Dropbox/www/improvely/web/js/temp.js",
+		"/C/Dropbox/www/improvely/web/zeros.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/collection.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/index.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/snippets/col-widgets.liquid",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/assets/enhance.jquery.js",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/assets/radiance.js",
+		"/C/Dropbox/www/improvely/apps/app/modules/reports/templates/conversionsSuccess.php",
+		"/C/Dropbox/www/improvely/apps/icf/modules/shopify/actions/actions.class.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Shopify/cache/naturalistic/4285543/templates/customers/order.liquid",
+		"/C/Dropbox/www/improvely/apps/shopify/modules/shopify/actions/actions.class.php",
+		"/C/Dropbox/www/improvely/lib/model/doctrine/base/BaseSite.class.php",
+		"/C/Dropbox/www/improvely/lib/model/doctrine/SiteTable.class.php",
+		"/C/Dropbox/www/improvely/lib/model/doctrine/Site.class.php",
+		"/C/Dropbox/www/improvely/lib/model/Shopify.class.php",
+		"/C/Dropbox/www/improvely/apps/icf/templates/layout.php",
+		"/C/Dropbox/www/improvely/web/states.php",
+		"/C/Dropbox/www/improvely/web/barcodes.php",
+		"/C/Dropbox/www/improvely/web/drp/examples.html",
+		"/C/Dropbox/www/improvely/web/drp/daterangepicker.js",
+		"/C/Dropbox/www/improvely/web/test.html",
+		"/C/Dropbox/www/improvely/apps/fulfillment/config/routing.yml",
+		"/C/Dropbox/www/improvely/apps/fulfillment/templates/layout.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/modules/shopify/templates/fulfillmentSuccess.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/modules/shopify/templates/ratesSuccess.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Shipment.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Requestor.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Rate.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Object.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Util.php",
+		"/C/Dropbox/www/improvely/apps/app/modules/tools/templates/linksSuccess.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Resource.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Address.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/CustomsInfo.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/CustomsItem.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Error.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/Parcel.php",
+		"/C/Dropbox/www/improvely/apps/fulfillment/lib/PostageLabel.php"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\dropbox\\www\\improvely",
+			"C:\\www\\improvely",
+			"C:\\www\\w3counter",
+			"C:\\www\\adtrack\\apps\\app\\modules"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"modal",
+			"Loading",
+			"spreedly",
+			"Not all the fields have been filled in correctly",
+			"background: #fff; margin: 10px;",
+			"#c00",
+			"dashed #c00",
+			"#c00",
+			"#eee",
+			"18px",
+			"16px",
+			"admin",
+			"React",
+			"reactivate",
+			"$cc",
+			"$data",
+			"signup",
+			"Mixpanel",
+			"mixpanel",
+			"person",
+			"fraud",
+			"activity",
+			"fraud",
+			"value",
+			"label",
+			"</td>",
+			"person",
+			"body {",
+			"border-top: 4px",
+			"border-top-color",
+			"bottom",
+			"_people",
+			"indicator",
+			"overview",
+			"pills",
+			"graph",
+			"placeholder",
+			"graph place",
+			"graph placeholder",
+			"width",
+			"improvely_awio",
+			".payment",
+			"Admin",
+			"url_for",
+			".json",
+			"account",
+			"localhost",
+			"extractSlug",
+			"$ignore",
+			"setDeleted",
+			"highlight",
+			"high",
+			"highlight",
+			"asset",
+			"#sharing",
+			"social",
+			"#social",
+			"#s",
+			"#social",
+			"description",
+			"social",
+			"product-",
+			"url",
+			"url9",
+			"add-",
+			"btn",
+			"logo",
+			"header",
+			"credit_card",
+			"credit_",
+			"costing you money",
+			"/font",
+			"../font",
+			"font/",
+			"reactivate",
+			"Reactivate",
+			"reactivate",
+			"amount",
+			"identify(",
+			"executeConv",
+			"Execute",
+			"executeGoal",
+			"amount",
+			"am",
+			"amount",
+			"    ",
+			"revenue",
+			"was",
+			"w",
+			"was",
+			"price",
+			"USD",
+			".click",
+			"$log",
+			"#log",
+			"->log(",
+			"link",
+			"compa",
+			"utm_",
+			"Admin",
+			"die(",
+			"die",
+			"something went",
+			"so",
+			"something went",
+			"@easypost",
+			"Shopify",
+			"\\EasyPost\\",
+			"constructFrom",
+			"get_class",
+			"EasyPost",
+			"Resource",
+			"preferences",
+			"pref",
+			"preferences",
+			"@pref",
+			"preferences",
+			"isSubdomain",
+			"test",
+			"isDomain",
+			"testing",
+			"test",
+			"expand",
+			"$connection",
+			"mail(",
+			"visitors to enter their",
+			"icf.improvely/",
+			"High Traffic"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"background: #fff; margin: 20px;",
+			"#08c",
+			"dashed #000",
+			"#000",
+			"#fff",
+			"#e6fde1",
+			"15px",
+			"14px",
+			"val",
+			"lab",
+			"</div></td>",
+			"_visits",
+			"improvely_demo",
+			"/font",
+			"	",
+			"",
+			"to ask for a",
+			"$connection = self::setConnection(AT_HOST);",
+			"    ",
+			"6.1",
+			"6_1",
+			"6.1",
+			"ok",
+			"",
+			"24.",
+			"23.",
+			"23.0",
+			"$request",
+			"W3Counter",
+			"  ",
+			"    ",
+			"/images",
+			"url:   /stats",
+			"module: reports",
+			"->execute",
+			"->prepare(",
+			"$statement",
+			"$connection",
+			"$con = Doctrine_Manager::connection();",
+			"/",
+			"  ",
+			"Improvely",
+			"improvely.com",
+			"\"\\t\"",
+			":slug",
+			"/images/",
+			"/img/",
+			"daterangepicker",
+			"table",
+			"created_at BETWEEN ? AND ?",
+			"? AND created_at BETWEEN ? AND ?",
+			"$tab",
+			"",
+			"\"/",
+			"inn_"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CustomView.php",
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/layout.php",
+					"settings":
+					{
+						"buffer_size": 2918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2674,
+								2674
+							]
+						],
+						"settings":
+						{
+							"auto_name": "layout",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 1675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Spreedly.php",
+					"settings":
+					{
+						"buffer_size": 3842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								997,
+								997
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/gateways.php",
+					"settings":
+					{
+						"buffer_size": 3869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								762,
+								762
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 484.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/payment_methods.php",
+					"settings":
+					{
+						"buffer_size": 5044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1716,
+								1716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 719.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"bootstrap.css",
+				"css/bootstrap.css"
+			],
+			[
+				"slim.php",
+				"Slim/Slim.php"
+			],
+			[
+				"logwriter",
+				"Slim/LogWriter.php"
+			],
+			[
+				"customerssucc",
+				"apps/website/modules/main/templates/customersSuccess.php"
+			],
+			[
+				"autobill",
+				"scripts/autobill.php"
+			],
+			[
+				"icf.js",
+				"web/icf.js"
+			],
+			[
+				"icf/actions",
+				"apps/icf/modules/shopify/actions/actions.class.php"
+			],
+			[
+				"website/actions",
+				"apps/website/modules/main/actions/actions.class.php"
+			],
+			[
+				"thankssucc",
+				"apps/website/modules/main/templates/thanksSuccess.php"
+			],
+			[
+				"thanks",
+				"apps/website/modules/main/templates/thanksSuccess.php"
+			],
+			[
+				"pricingsucc",
+				"apps/website/modules/main/templates/pricingSuccess.php"
+			],
+			[
+				"website/main/action",
+				"apps/website/modules/main/actions/actions.class.php"
+			],
+			[
+				"plansucc",
+				"apps/app/modules/account/templates/planSuccess.php"
+			],
+			[
+				"indexsuccss",
+				"apps/app/modules/main/templates/indexSuccess.php"
+			],
+			[
+				"welcomesucc",
+				"apps/app/modules/main/templates/welcomeSuccess.php"
+			],
+			[
+				"routing",
+				"apps/app/config/routing.yml"
+			],
+			[
+				"account/action",
+				"apps/app/modules/account/actions/actions.class.php"
+			],
+			[
+				"main/action",
+				"apps/app/modules/main/actions/actions.class.php"
+			],
+			[
+				"reactivatesucc",
+				"apps/app/modules/account/templates/reactivateSuccess.php"
+			],
+			[
+				"iljmp/dbconn",
+				"apps/iljmp/lib/dbConnFilter.php"
+			],
+			[
+				"go/actions",
+				"apps/iljmp/modules/go/actions/actions.class.php"
+			],
+			[
+				"datasource",
+				"lib/model/DataSource.class.php"
+			],
+			[
+				"website/layout",
+				"apps/website/templates/layout.php"
+			],
+			[
+				"app/layout",
+				"apps/app/templates/layout.php"
+			],
+			[
+				"signupsuccess",
+				"apps/website/modules/main/templates/signupSuccess.php"
+			],
+			[
+				"limit.",
+				"scripts/limit.php"
+			],
+			[
+				"personsucc",
+				"apps/app/modules/reports/templates/personSuccess.php"
+			],
+			[
+				"go/action",
+				"apps/iljmp/modules/go/actions/actions.class.php"
+			],
+			[
+				"layout",
+				"apps/app/templates/layout.php"
+			],
+			[
+				"realtimesucc",
+				"apps/app/modules/reports/templates/realtimeSuccess.php"
+			],
+			[
+				"clickssucc",
+				"apps/app/modules/reports/templates/clicksSuccess.php"
+			],
+			[
+				"reports/actions",
+				"apps/app/modules/reports/actions/actions.class.php"
+			],
+			[
+				"frauddetail",
+				"apps/app/modules/reports/templates/fraudDetailSuccess.php"
+			],
+			[
+				"fraudsucc",
+				"apps/app/modules/reports/templates/fraudSuccess.php"
+			],
+			[
+				"_header",
+				"apps/app/templates/_header.php"
+			],
+			[
+				"update-",
+				"web/update-prices.php"
+			],
+			[
+				"update",
+				"scripts/update.php"
+			],
+			[
+				"codesuc",
+				"apps/app/modules/main/templates/projectCodeSuccess.php"
+			],
+			[
+				"improvely.css",
+				"web/css/improvely.css"
+			],
+			[
+				"project",
+				"apps/app/modules/main/templates/projectSuccess.php"
+			],
+			[
+				"app/routing",
+				"apps/app/config/routing.yml"
+			],
+			[
+				"tools/actions",
+				"apps/app/modules/tools/actions/actions.class.php"
+			],
+			[
+				"person",
+				"apps/app/modules/reports/templates/personSuccess.php"
+			],
+			[
+				"tax",
+				"web/tax.php"
+			],
+			[
+				"limit.php",
+				"scripts/limit.php"
+			],
+			[
+				"main/index",
+				"apps/app/modules/main/templates/indexSuccess.php"
+			],
+			[
+				".js",
+				"web/js/main.js"
+			],
+			[
+				"reportsucc",
+				"apps/app/modules/reports/templates/reportSuccess.php"
+			],
+			[
+				"highchart",
+				"web/js/highcharts.js"
+			],
+			[
+				"highcharts",
+				"web/js/highcharts.js"
+			],
+			[
+				"style.css",
+				"web/blog/wp-content/themes/improvely/style.css"
+			],
+			[
+				"_click",
+				"apps/app/modules/reports/templates/_click.php"
+			],
+			[
+				"dbconn",
+				"apps/app/lib/dbConnFilter.php"
+			],
+			[
+				"spreedly",
+				"lib/model/Spreedly.class.php"
+			],
+			[
+				"adminsuccess",
+				"apps/website/modules/main/templates/adminSuccess.php"
+			],
+			[
+				"linkssucc",
+				"apps/app/modules/affiliates/templates/linksSuccess.php"
+			],
+			[
+				"peoplsearch",
+				"apps/app/modules/reports/templates/peopleSearchSuccess.php"
+			],
+			[
+				"spikes",
+				"apps/app/modules/reports/templates/spikesSuccess.php"
+			],
+			[
+				"reportsuccess",
+				"apps/app/modules/reports/templates/reportSuccess.php"
+			],
+			[
+				"overviewsucc",
+				"apps/app/modules/reports/templates/overviewSuccess.php"
+			],
+			[
+				"indexsuccess",
+				"apps/app/modules/main/templates/indexSuccess.php"
+			],
+			[
+				"whitelabel",
+				"apps/app/modules/account/templates/whiteLabelSuccess.php"
+			],
+			[
+				"mailer",
+				"lib/model/Mailer.class.php"
+			],
+			[
+				"affiliate/action",
+				"apps/app/modules/affiliates/actions/actions.class.php"
+			],
+			[
+				"datbase",
+				"config/databases.yml"
+			],
+			[
+				".php",
+				"web/tax.php"
+			],
+			[
+				"customers.",
+				"apps/website/modules/main/templates/customersSuccess.php"
+			],
+			[
+				"api/action",
+				"apps/app/modules/api/actions/actions.class.php"
+			],
+			[
+				"linksuccess",
+				"apps/app/modules/tools/templates/linkSuccess.php"
+			],
+			[
+				"account/actions",
+				"apps/app/modules/account/actions/actions.class.php"
+			],
+			[
+				"buildersuccess",
+				"apps/app/modules/tools/templates/builderSuccess.php"
+			],
+			[
+				"fraud",
+				"apps/app/modules/reports/templates/fraudSuccess.php"
+			],
+			[
+				".css",
+				"web/css/website.css"
+			],
+			[
+				"fraudsuc",
+				"apps/app/modules/reports/templates/fraudSuccess.php"
+			],
+			[
+				"font-awesome",
+				"web/css/font-awesome-ie7.css"
+			],
+			[
+				"reactivate",
+				"apps/app/modules/account/templates/reactivateSuccess.php"
+			],
+			[
+				"shopifyscript",
+				"apps/iljmp/modules/track/templates/shopifyScriptSuccess.php"
+			],
+			[
+				"scriptsucc",
+				"apps/iljmp/modules/track/templates/scriptSuccess.php"
+			],
+			[
+				"code",
+				"apps/app/modules/main/templates/projectCodeSuccess.php"
+			],
+			[
+				"track/action",
+				"apps/iljmp/modules/track/actions/actions.class.php"
+			],
+			[
+				"fulfill/action",
+				"apps/fulfillment/modules/shopify/actions/actions.class.php"
+			],
+			[
+				"iljmp/action",
+				"apps/iljmp/modules/go/actions/actions.class.php"
+			],
+			[
+				"iljmp/actions",
+				"apps/iljmp/modules/track/actions/actions.class.php"
+			],
+			[
+				"codesuccess",
+				"apps/app/modules/main/templates/projectCodeSuccess.php"
+			],
+			[
+				"_converson",
+				"apps/app/modules/reports/templates/_conversion.php"
+			],
+			[
+				"temp.js",
+				"web/js/temp.js"
+			],
+			[
+				"_conversion",
+				"apps/app/modules/reports/templates/_conversion.php"
+			],
+			[
+				"customerssuccess",
+				"apps/website/modules/main/templates/customersSuccess.php"
+			],
+			[
+				"conversionssuc",
+				"apps/app/modules/reports/templates/conversionsSuccess.php"
+			],
+			[
+				"clickss",
+				"apps/app/modules/reports/templates/clicksSuccess.php"
+			],
+			[
+				"clickssuccess",
+				"apps/app/modules/reports/templates/clicksSuccess.php"
+			],
+			[
+				"heder",
+				"apps/app/templates/_header.php"
+			],
+			[
+				"realtimesuccess",
+				"apps/app/modules/reports/templates/realtimeSuccess.php"
+			],
+			[
+				"shopify/actions",
+				"apps/shopify/modules/shopify/actions/actions.class.php"
+			],
+			[
+				"main/actions",
+				"apps/app/modules/main/actions/actions.class.php"
+			],
+			[
+				"projectsuccess",
+				"apps/app/modules/main/templates/projectSuccess.php"
+			],
+			[
+				"sitetable",
+				"lib/model/doctrine/SiteTable.class.php"
+			],
+			[
+				"site.class",
+				"lib/model/doctrine/Site.class.php"
+			],
+			[
+				"basesite",
+				"lib/model/doctrine/base/BaseSite.class.php"
+			],
+			[
+				"icf/templates/layout",
+				"apps/icf/templates/layout.php"
+			],
+			[
+				"shopify",
+				"lib/model/Shopify.class.php"
+			],
+			[
+				"daterangepicker.js",
+				"web/drp/daterangepicker.js"
+			],
+			[
+				"example",
+				"web/drp/examples.html"
+			],
+			[
+				"website/action",
+				"apps/website/modules/main/actions/actions.class.php"
+			],
+			[
+				"website/customers",
+				"apps/website/modules/main/templates/customersSuccess.php"
+			],
+			[
+				"rate",
+				"apps/fulfillment/lib/Rate.php"
+			],
+			[
+				"request",
+				"apps/fulfillment/lib/Requestor.php"
+			],
+			[
+				"shipment.",
+				"apps/fulfillment/lib/Shipment.php"
+			],
+			[
+				"buildersuc",
+				"apps/app/modules/tools/templates/builderSuccess.php"
+			],
+			[
+				"shopify.",
+				"lib/model/Shopify.class.php"
+			],
+			[
+				"track/ac",
+				"apps/iljmp/modules/track/actions/actions.class.php"
+			],
+			[
+				"shopify.c",
+				"lib/model/Shopify.class.php"
+			],
+			[
+				"icf-button",
+				"web/icf-button.js"
+			],
+			[
+				"icf-butt",
+				"web/icf-button.js"
+			],
+			[
+				"shopify/action",
+				"apps/shopify/modules/shopify/actions/actions.class.php"
+			],
+			[
+				"pricings",
+				"apps/website/modules/main/templates/pricingSuccess.php"
+			],
+			[
+				"pricinglarge",
+				"apps/website/modules/main/templates/pricingLargeSuccess.php"
+			],
+			[
+				"signupss",
+				"apps/website/modules/main/templates/signupSuccess.php"
+			],
+			[
+				"dbconnfilter",
+				"apps/iljmp/lib/dbConnFilter.php"
+			],
+			[
+				"peoples",
+				"apps/app/modules/reports/templates/peopleSuccess.php"
+			],
+			[
+				"conversionss",
+				"apps/app/modules/reports/templates/conversionsSuccess.php"
+			],
+			[
+				"affiliate/links",
+				"apps/app/modules/affiliates/templates/linksSuccess.php"
+			],
+			[
+				"links",
+				"apps/app/modules/affiliates/templates/linkSuccess.php"
+			],
+			[
+				"imports",
+				"apps/app/modules/tools/templates/importSuccess.php"
+			],
+			[
+				"spike",
+				"apps/app/modules/reports/templates/spikesSuccess.php"
+			],
+			[
+				"overview",
+				"apps/app/modules/reports/templates/overviewSuccess.php"
+			],
+			[
+				"report",
+				"apps/app/modules/reports/templates/reportSuccess.php"
+			],
+			[
+				"formathelper",
+				"apps/app/lib/helper/FormatHelper.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Dropbox/www/improvely/adtrack.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true
+}
