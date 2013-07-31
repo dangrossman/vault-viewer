@@ -11,6 +11,8 @@ class Spreedly {
 			$this->key = $key;
 		if (!empty($secret))
 			$this->secret = $secret;
+		if (empty($this->key) || empty($this->secret))
+			throw new Exception("You must provide a Spreedly environment key and access secret to use this class");
 	}
 
 	public function getGateways($since = '') {

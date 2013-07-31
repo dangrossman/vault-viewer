@@ -16,18 +16,27 @@ $app = new \Slim\Slim(array(
 
 $key = '';
 $secret = '';
+$logged_in = false;
 
 if (!empty($_SESSION['login']) && !empty($_SESSION['secret'])) {
     $key = $_SESSION['login'];
     $secret = $_SESSION['secret'];
 }
 
-$spreedly = new Spreedly($key, $secret);
+$spreedly = null;
+if (empty($_POST)) {
+    try {
+        $spreedly = new Spreedly($key, $secret);
+        $logged_in = true;
+    } catch (Exception $e) {
+        $logged_in = false;
+    }
+}
 
 //Routes
 
-$app->get('/', function() use ($app, $key, $secret) {
-    if (!empty($key) && !empty($secret)) {
+$app->get('/', function() use ($app, $logged_in) {
+    if ($logged_in) {
         $app->redirect('/gateways');
     } else {
         $app->render('login.php');
@@ -48,7 +57,8 @@ $app->get('/logout', function() use ($app) {
     $app->redirect('/');
 });
 
-$app->get('/gateways', function() use ($app) {
+$app->get('/gateways', function() use ($app, $logged_in) {
+    if (!$logged_in) $app->redirect('/');
     $app->render('gateways.php');
 });
 
@@ -66,7 +76,8 @@ $app->get('/gateway/:gateway_token/redact.json', function($gateway_token) use ($
     $res->write(json_encode(array('response' => $response)));
 });
 
-$app->get('/payment_methods', function() use ($app) {
+$app->get('/payment_methods', function() use ($app, $logged_in) {
+    if (!$logged_in) $app->redirect('/');
     $app->render('payment_methods.php');
 });
 
