@@ -11,7 +11,7 @@ an example of using the included Spreedly PHP class that wraps common Spreedly C
 ## Installation
 
 Clone or unzip this repository to the document root of a web server configured to serve PHP, 
-such as Apache with mod_php or nginx with php-fpm. 
+such as Apache with mod_php or nginx with php-fpm. PHP 5.3 or newer is required.
 
 There are references to absolute paths/URIs in the HTML, so don't place the code in a subfolder 
 of a domain.
