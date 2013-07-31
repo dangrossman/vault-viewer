@@ -1,0 +1,82 @@
+h1 {
+	font-size: 24px;
+}
+.table td, .table th {
+	white-space: nowrap;
+	padding: 8px 12px;
+	vertical-align: middle;
+}
+.table td {
+	font-size: 12px;
+}
+#status {
+	font-size: 14px;
+}
+thead th {
+	cursor: pointer;
+	background: #eee;
+}
+thead th.first {
+	background: #fff;
+}
+thead .headerSortUp:after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-top: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	margin-left: 5px;
+}
+thead .headerSortDown:after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-bottom: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	margin-left: 5px;
+}
+#nav .navbar-inner {
+	background: #1e95f9;
+}
+#nav .nav li a:link, #nav .nav li a:visited {
+	color: #fff;
+	border-right: 1px solid #067bde;
+	border-left: 1px solid #50acfa;
+	font-weight: bold;
+}
+#nav .nav li a:hover {
+	color: #e1f3fd;
+	background: #056ec5;
+	border-left: 1px solid #056ec5;
+}
+#nav a.brand {
+	color: #fff;
+	font-style: italic;
+	font-weight: bold;
+}
+#nav i {
+	padding-right: 3px;
+}
+#footer {
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+	background: #056ec5;
+	border-top: 1px solid #1e95f9;
+	color: #e1f3fd;
+	padding: 10px 0;
+}
+#footer a:link, #footer a:visited {
+	color: #fff;
+	text-decoration: underline;
+}

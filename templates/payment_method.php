@@ -1,4 +1,4 @@
-<h1>Payment Methods</h1>
+<h1>Transactions</h1>
 
 <div class="navbar">
 	<div class="navbar-inner">
@@ -11,7 +11,7 @@
 			<ul class="nav pull-right">
 				<li>
 					<p class="navbar-text" id="status">
-						<i class="icon-spinner icon-spin icon-large"></i> &nbsp; Loaded <span>0</span> payment methods...
+						<i class="icon-spinner icon-spin icon-large"></i> &nbsp; Loaded <span>0</span> transactions...
 					</p>
 				</li>
 			</ul>
@@ -20,16 +20,14 @@
 	</div>
 </div>
 
-<table class="table" id="payment_methods" style="display: none">
+<table class="table" id="transactions" style="display: none">
 	<thead>
 		<tr>
 			<th class="first"></th>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Created</th>
-			<th>Last Updated</th>
-			<th>State</th>
-			<th style="width: 100%">Token</th>
+			<th>Created At</th>
+			<th>Transaction Type</th>
+			<th>Amount</th>
+			<th>Succeeded</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -45,23 +43,19 @@ function update(filtered) {
 	if ($.isArray(filtered))
 		list = filtered;
 
-	$('#payment_methods tbody').html('');
+	$('#transactions tbody').html('');
 	for (var i = 0; i < list.length; i++) {
-		var pm = list[i];
+		var item = list[i];
 		var html = '<tr>';
 		html += '<td>';
-		html += '<a href="#' + pm.token + '" title="Redact" class="btn btn-small btn-danger redact"><i class="icon-remove"></i></a> ';
-		html += '<a href="#' + pm.token + '" title="View XML" class="btn btn-small zoom"><i class="icon-zoom-in"></i></a> ';
-		html += '<a href="/payment_method/' + pm.token + '" title="View Transactions" class="btn btn-small"><i class="icon-retweet"></i></a>';
+		html += '<a href="#' + item.token + '" title="View XML" class="btn btn-small zoom"><i class="icon-zoom-in"></i></a> ';
 		html += '</td>';
-		html += '<td>' + pm.full_name + '</td>';
-		html += '<td>' + pm.payment_method_type + '</td>';
-		html += '<td>' + moment(pm.created_at).format('YYYY-MM-DD') + '</td>';
-		html += '<td>' + moment(pm.updated_at).format('YYYY-MM-DD') + '</td>';
-		html += '<td>' + pm.storage_state + '</td>';
-		html += '<td style="width: 100%">' + pm.token + '</td>';
+		html += '<td>' + moment(item.created_at).format('YYYY-MM-DD') + '</td>';
+		html += '<td>' + item.transaction_type + '</td>';
+		html += '<td>' + (item.hasOwnProperty('amount') ? item.amount / 100 : 'N/A') + '</td>';
+		html += '<td>' + item.succeeded + '</td>';
 		html += '</tr>';
-		$('#payment_methods tbody').append(html);
+		$('#transactions tbody').append(html);
 	}
 
 	$('a').tooltip();
@@ -69,7 +63,7 @@ function update(filtered) {
 }
 
 function get_items(since) {
-	var url = '/payment_methods.json';
+	var url = '/payment_method/<?php echo $payment_method_token; ?>/transactions.json';
 	if (typeof since != 'undefined')
 		url += '/' + since;
 	$.getJSON(url, function(data) {
@@ -81,14 +75,14 @@ function get_items(since) {
 			update();
 			get_items(data[data.length - 1].token);
 		} else {
-			$('#status').html('Displaying ' + items.length + ' payment methods');
+			$('#status').html('Displaying ' + items.length + ' transactions');
 			update();
 
-		    $("#payment_methods").show().tablesorter({ 
+		    $("#transactions").show().tablesorter({ 
 		        textExtraction: function(node) { 
 		            return node.innerHTML.replace(/<\/?[^>]+>/gi, '').replace(',', '');
 		        },
-		        sortList: [[3,1]]
+		        sortList: [[1,1]]
 		    });	
 
 		}
@@ -100,7 +94,7 @@ function search(query) {
 	if (query.length == 0) {
 		update();
 		$('#payment_methods').trigger("update");
-		$('#payment_methods').trigger("sorton",[[[3,1]]]);
+		$('#payment_methods').trigger("sorton",[[[1,1]]]);
 		return;
 	}
 
@@ -115,7 +109,7 @@ function search(query) {
 
 	if (filtered.length > 0) {
 		$('#payment_methods').trigger("update");
-		$('#payment_methods').trigger("sorton",[[[3,1]]]);
+		$('#payment_methods').trigger("sorton",[[[1,1]]]);
 	}
 
 }
@@ -123,14 +117,6 @@ function search(query) {
 $(document).ready(function() {
 
 	get_items();
-
-	$('.search-query').keypress(function() {
-		search($(this).val());
-	});
-
-	$('.search-query').blur(function() {
-		search($(this).val());
-	});		
 
 	$(document).on('click', 'a.zoom', function() {
 		var selector = $(this).attr('href').replace('#', '');
@@ -151,18 +137,13 @@ $(document).ready(function() {
 
 	});
 
-	$(document).on('click', 'a.redact', function() {
-
-		var selector = $(this).attr('href').replace('#', '');
-
-		var sure = confirm('Are you sure you want to redact this payment method?');
-		if (sure) {
-			$.getJSON('/payment_method/' + selector + '/redact.json', function(data) {
-				window.location = '/payment_methods';
-			});
-		}
-
+	$('.search-query').keypress(function() {
+		search($(this).val());
 	});
+
+	$('.search-query').blur(function() {
+		search($(this).val());
+	});	
 
 });
 </script>

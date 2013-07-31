@@ -2,86 +2,15 @@
 <html lang="en">
 	<head>
 
-		<title>Spreedly Dashboard</title>
+		<title>Spreedly UI</title>
 		<link rel="shortcut icon" href="/favicon.ico" />
 
 		<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link href="/css/font-awesome.css" rel="stylesheet" />
+		<link href="/css/spreedlyui.css" rel="stylesheet" type="text/css" />
 		<!--[if IE 7]>
 		<link rel="stylesheet" href="/css/font-awesome-ie7.css">
 		<![endif]-->
-
-		<style type="text/css">
-			h1 {
-				font-size: 24px;
-			}
-			.table td, .table th {
-				white-space: nowrap;
-				padding: 8px 12px;
-				vertical-align: middle;
-			}
-			.table td {
-				font-size: 12px;
-			}
-			#status {
-				font-size: 14px;
-			}
-			thead th {
-				cursor: pointer;
-				background: #eee;
-			}
-			thead th.first {
-				background: #fff;
-			}
-			thead .headerSortUp:after {
-				display: inline-block;
-				width: 0;
-				height: 0;
-				vertical-align: middle;
-				border-top: 4px solid #000000;
-				border-right: 4px solid transparent;
-				border-left: 4px solid transparent;
-				content: "";
-				opacity: 0.5;
-				filter: alpha(opacity=50);
-				margin-left: 5px;
-			}
-			thead .headerSortDown:after {
-				display: inline-block;
-				width: 0;
-				height: 0;
-				vertical-align: middle;
-				border-bottom: 4px solid #000000;
-				border-right: 4px solid transparent;
-				border-left: 4px solid transparent;
-				content: "";
-				opacity: 0.5;
-				filter: alpha(opacity=50);
-				margin-left: 5px;
-			}
-			#nav .navbar-inner {
-				background: #1e95f9;
-			}
-			#nav .nav li a:link, #nav .nav li a:visited {
-				color: #fff;
-				border-right: 1px solid #067bde;
-				border-left: 1px solid #50acfa;
-				font-weight: bold;
-			}
-			#nav .nav li a:hover {
-				color: #e1f3fd;
-				background: #056ec5;
-				border-left: 1px solid #056ec5;
-			}
-			#nav a.brand {
-				color: #fff;
-				font-style: italic;
-				font-weight: bold;
-			}
-			#nav i {
-				padding-right: 3px;
-			}
-		</style>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="/js/jquery.tablesorter.js"></script>
@@ -97,22 +26,55 @@
 		<div class="navbar navbar-inverse navbar-fixed-top" id="nav">
 			<div class="navbar-inner">
 				<div class="container">
-					<a href="#" class="brand">Spreedly Dashboard</a>
+					<a href="#" class="brand">Spreedly UI</a>
 					<ul class="nav">
 						<li><a href="/gateways"><i class="icon-shopping-cart"></i> Payment Gateways</a></li>
 						<li><a href="/payment_methods"><i class="icon-credit-card"></i> Payment Methods</a></li>
 					</ul>
+					<?php if (isset($_SESSION['login'])): ?>
 					<ul class="nav pull-right">
 						<li><a href="/logout"><i class="icon-power-off"></i> Log out</a></li>
 					</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
 
-		<div class="container" style="margin-top: 40px">
+		<div class="container" style="margin: 40px auto 20px auto">
 			<div class="row">
 				<div class="span12">
 					<?php echo $view_content; ?>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<b>Spreedly UI</b> for <a href="https://spreedly.com/">Spreedly Core</a> 
+						was created by <a href="http://www.dangrossman.info">Dan Grossman</a> 
+						while building <a href="http://www.improvely.com">Improvely</a>. 
+						Get the latest code from  
+						<a href="https://github.com/dangrossman/spreedly-ui">GitHub</a>. 
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal hide fade" id="modal" style="width: 800px; margin-left: -400px">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4></h4>
+			</div>
+			<div class="modal-body">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#xml" data-toggle="tab">XML</a>
+					</li>
+				</ul>
+		        <div class="tab-content">
+					<div class="tab-pane active" id="xml"></div>
 				</div>
 			</div>
 		</div>

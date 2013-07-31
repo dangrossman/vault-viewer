@@ -28,6 +28,7 @@
 			<th>Type</th>
 			<th>Created</th>
 			<th>Last Updated</th>
+			<th>State</th>
 			<th style="width: 100%">Token</th>
 		</tr>
 	</thead>
@@ -49,13 +50,14 @@ function update(filtered) {
 		var gw = list[i];
 		var html = '<tr>';
 		html += '<td>';
-		html += '<a href="#" title="Redact" class="btn btn-small btn-danger"><i class="icon-remove"></i></a> ';
-		html += '<a href="#' + gw.token + '" title="View Details" class="btn btn-small zoom"><i class="icon-zoom-in"></i></a>';
+		html += '<a href="#' + gw.token + '" title="Redact" class="btn btn-small btn-danger redact"><i class="icon-remove"></i></a> ';
+		html += '<a href="#' + gw.token + '" title="View XML" class="btn btn-small zoom"><i class="icon-zoom-in"></i></a>';
 		html += '</td>';
 		html += '<td>' + gw.name + '</td>';
 		html += '<td>' + gw.gateway_type + '</td>';
 		html += '<td>' + moment(gw.created_at).format('YYYY-MM-DD') + '</td>';
 		html += '<td>' + moment(gw.updated_at).format('YYYY-MM-DD') + '</td>';
+		html += '<td>' + gw.state + '</td>';
 		html += '<td style="width: 100%">' + gw.token + '</td>';
 		html += '</tr>';
 		$('#gateways tbody').append(html);
@@ -121,6 +123,14 @@ $(document).ready(function() {
 
 	get_items();
 
+	$('.search-query').keypress(function() {
+		search($(this).val());
+	});
+
+	$('.search-query').blur(function() {
+		search($(this).val());
+	});
+
 	$(document).on('click', 'a.zoom', function() {
 		var selector = $(this).attr('href').replace('#', '');
 
@@ -140,30 +150,18 @@ $(document).ready(function() {
 
 	});
 
-	$('.search-query').keypress(function() {
-		search($(this).val());
-	});
+	$(document).on('click', 'a.redact', function() {
 
-	$('.search-query').blur(function() {
-		search($(this).val());
+		var selector = $(this).attr('href').replace('#', '');
+
+		var sure = confirm('Are you sure you want to redact this payment gateway?');
+		if (sure) {
+			$.getJSON('/gateway/' + selector + '/redact.json', function(data) {
+				window.location = '/gateways';
+			});
+		}
+
 	});
 
 });
 </script>
-
-<div class="modal hide fade" id="modal" style="width: 800px; margin-left: -400px">
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		<h4></h4>
-	</div>
-	<div class="modal-body">
-		<ul class="nav nav-tabs">
-			<li class="active">
-				<a href="#xml" data-toggle="tab">XML</a>
-			</li>
-		</ul>
-        <div class="tab-content">
-			<div class="tab-pane active" id="xml"></div>
-		</div>
-	</div>
-</div>

@@ -3,18 +3,23 @@
 class Spreedly {
 
 	const ENDPOINT = 'https://spreedlycore.com/v1/';
+	public $login = '';
+	public $secret = '';
 
-	public function Spreedly($login, $secret) {
-		$this->login = $login;
-		$this->secret = $secret;
+	public function Spreedly($login = '', $secret = '') {
+		if (!empty($login))
+			$this->login = $login;
+		if (!empty($secret))
+			$this->secret = $secret;
+		if (empty($this->login) || empty($this->secret))
+			throw new Exception('You must provide your Spreedly Core API credentials to use this class');
 	}
 
 	public function getGateways($since = '') {
 
 		$url = self::ENDPOINT . '/gateways.xml';
-		if (!empty($since)) {
+		if (!empty($since))
 			$url .= '/?since_token=' . urlencode($since);
-		}
 
 		$gateways = array();
 
@@ -32,9 +37,8 @@ class Spreedly {
 	public function getPaymentMethods($since = '') {
 
 		$url = self::ENDPOINT . '/payment_methods.xml';
-		if (!empty($since)) {
+		if (!empty($since))
 			$url .= '/?since_token=' . urlencode($since);
-		}
 
 		$payment_methods = array();
 
@@ -50,69 +54,99 @@ class Spreedly {
 	}
 
 
-	public function getTransactions($payment_method_token) {
+	public function getTransactions($payment_method_token, $since = '') {
 
 		$url = self::ENDPOINT . '/payment_methods/' . $payment_method_token . '/transactions.xml';
+		if (!empty($since))
+			$url .= '/?since_token=' . urlencode($since);
+
+		$transactions = array();
 		
 		$xml = $this->get($url);
 		$obj = new SimpleXMLElement($xml);
-		while (count($obj->transaction) > 0) {
-			foreach ($obj->transaction as $transaction) {
-				$transaction->xml = $transaction->asXML();
-				$transactions[] = $transaction;
-			}
-			$xml = $this->get($url . '/?since_token=' . urlencode($transactions[count($transactions)-1]->token));
-			$obj = new SimpleXMLElement($xml);
+		foreach ($obj->transaction as $transaction) {
+			$transaction->xml = $transaction->asXML();
+			$transactions[] = $transaction;
 		}
 
 		return $transactions;
 
 	}
 
-	public static function retain($payment_token) {
+	public function retainGateway($gateway_token) {
 
-		$url = self::ENDPOINT . 'payment_methods/' . $payment_token . '/retain.xml';
+		$url = self::ENDPOINT . 'gateways/' . $gateway_token . '/retain.xml';
 
-		$response = self::put($url);
-
-		if ($response && (string)$response->succeeded == 'true')
-			return $response;
-		return false;
-
-	}
-
-	public static function redact($payment_token) {
-
-		$url = self::ENDPOINT . 'payment_methods/' . $payment_token . '/redact.xml';
-
-		$response = self::put($url);
+		$xml = $this->put($url);
+		$response = new SimpleXMLElement($xml);
 
 		if ($response && (string)$response->succeeded == 'true')
-			return $response;
+			return $xml;
+		return false;		
+
+	}	
+
+	public function redactGateway($gateway_token) {
+
+		$url = self::ENDPOINT . 'gateways/' . $gateway_token . '/redact.xml';
+
+		$xml = $this->put($url);
+		$response = new SimpleXMLElement($xml);
+
+		if ($response && (string)$response->succeeded == 'true')
+			return $xml;
 		return false;		
 
 	}
 
-	public static function capture($transaction) {
+	public function redactPaymentMethod($payment_token) {
 
-		$url = self::ENDPOINT . 'transactions/' . $transaction . '/capture.xml';
+		$url = self::ENDPOINT . 'payment_methods/' . $payment_token . '/redact.xml';
 
-		$response = self::post($url, $method, $data);
+		$xml = $this->put($url);
+		$response = new SimpleXMLElement($xml);
 
 		if ($response && (string)$response->succeeded == 'true')
-			return $response;
+			return $xml;
+		return false;		
+
+	}
+
+	public function retainPaymentMethod($payment_token) {
+
+		$url = self::ENDPOINT . 'payment_methods/' . $payment_token . '/retain.xml';
+
+		$xml = $this->put($url);
+		$response = new SimpleXMLElement($xml);
+
+		if ($response && (string)$response->succeeded == 'true')
+			return $xml;
 		return false;
 
 	}
 
-	public static function void($transaction) {
+	public function capture($transaction) {
+
+		$url = self::ENDPOINT . 'transactions/' . $transaction . '/capture.xml';
+
+		$xml = $this->post($url, $method, $data);
+		$response = new SimpleXMLElement($xml);
+
+		if ($response && (string)$response->succeeded == 'true')
+			return $xml;
+		return false;
+
+	}
+
+	public function void($transaction) {
 
 		$url = self::ENDPOINT . 'transactions/' . $transaction . '/void.xml';
 
-		$response = self::post($url, $method, $data);
+		$xml = $this->post($url, $method, $data);
+		$response = new SimpleXMLElement($xml);
 
 		if ($response && (string)$response->succeeded == 'true')
-			return $response;
+			return $xml;
 		return false;
 
 	}
@@ -154,7 +188,7 @@ class Spreedly {
 		curl_setopt($ch, CURLOPT_USERPWD, $this->login . ':' . $this->secret);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/xml', 'Content-Length: 0'));
 
 		$xml = curl_exec($ch);
