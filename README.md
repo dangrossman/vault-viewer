@@ -1,10 +1,11 @@
-### Spreedly UI: A lightweight frontend to the Spreedly Core API
+### Vault Viewer: A lightweight frontend to the Spreedly Core API
 
 ![Spreedly UI](http://i.imgur.com/gipxlf5.png)
 
-Spreedly UI is a PHP application for listing, searching and redacting payment gateways, payment 
-methods and transactions in a [Spreedly Core](http://www.spreedly.com) account. It also serves as 
-an example of using the included Spreedly PHP class that wraps common Spreedly Core API usage.
+Vault Viewer is a PHP application for listing, searching and redacting the payment gateways, 
+payment methods and transactions in a [Spreedly Core](http://www.spreedly.com) account. It 
+also serves as an example of using the included Spreedly PHP class that wraps some common 
+Spreedly Core API usage.
 
 **[View a demo](http://spreedly.awio.com/)**
 

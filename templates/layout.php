@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 
-		<title>Spreedly UI</title>
+		<title>Vault Viewer for Spreedly Core</title>
 		<link rel="shortcut icon" href="/favicon.ico" />
 
 		<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -26,7 +26,7 @@
 		<div class="navbar navbar-inverse navbar-fixed-top" id="nav">
 			<div class="navbar-inner">
 				<div class="container">
-					<a href="/" class="brand">Spreedly UI</a>
+					<a href="/" class="brand">Vault Viewer</a>
 					<ul class="nav">
 						<li><a href="/gateways"><i class="icon-shopping-cart"></i> Payment Gateways</a></li>
 						<li><a href="/payment_methods"><i class="icon-credit-card"></i> Payment Methods</a></li>
@@ -52,7 +52,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<b>Spreedly UI</b> for <a href="https://spreedly.com/">Spreedly Core</a> 
+						<b>Vault Viewer</b> for <a href="https://spreedly.com/">Spreedly Core</a> 
 						was created by <a href="http://www.dangrossman.info">Dan Grossman</a> 
 						while building <a href="http://www.improvely.com">Improvely</a>. 
 						Get the latest code from  
