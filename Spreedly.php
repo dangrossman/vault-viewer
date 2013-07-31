@@ -3,16 +3,14 @@
 class Spreedly {
 
 	const ENDPOINT = 'https://spreedlycore.com/v1/';
-	public $login = '';
+	public $key = '';
 	public $secret = '';
 
-	public function Spreedly($login = '', $secret = '') {
-		if (!empty($login))
-			$this->login = $login;
+	public function Spreedly($key = '', $secret = '') {
+		if (!empty($key))
+			$this->key = $key;
 		if (!empty($secret))
 			$this->secret = $secret;
-		if (empty($this->login) || empty($this->secret))
-			throw new Exception('You must provide your Spreedly Core API credentials to use this class');
 	}
 
 	public function getGateways($since = '') {
@@ -154,7 +152,7 @@ class Spreedly {
 	private function get($url) {
 
 		$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_USERPWD, $this->login . ':' . $this->secret);
+		curl_setopt($ch, CURLOPT_USERPWD, $this->key . ':' . $this->secret);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
@@ -168,7 +166,7 @@ class Spreedly {
 	private function post($url, $data) {
 
 		$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_USERPWD, $this->login . ':' . $this->secret);
+		curl_setopt($ch, CURLOPT_USERPWD, $this->key . ':' . $this->secret);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_POST, TRUE);
@@ -185,7 +183,7 @@ class Spreedly {
 	private function put($url) {
 
 		$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_USERPWD, $this->login . ':' . $this->secret);
+		curl_setopt($ch, CURLOPT_USERPWD, $this->key . ':' . $this->secret);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');

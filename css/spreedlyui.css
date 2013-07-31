@@ -67,16 +67,24 @@ thead .headerSortDown:after {
 #nav i {
 	padding-right: 3px;
 }
+#login {
+	width: 250px;
+	margin: 100px auto;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px 20px 0 20px;
+}
 #footer {
 	width: 100%;
 	margin: 0px auto;
 	text-align: center;
-	background: #056ec5;
-	border-top: 1px solid #1e95f9;
-	color: #e1f3fd;
+	background: #eee;
+	border-top: 1px solid #ccc;
+	color: #333;
 	padding: 10px 0;
 }
 #footer a:link, #footer a:visited {
-	color: #fff;
+	color: #06c;
 	text-decoration: underline;
 }

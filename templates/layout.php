@@ -26,7 +26,7 @@
 		<div class="navbar navbar-inverse navbar-fixed-top" id="nav">
 			<div class="navbar-inner">
 				<div class="container">
-					<a href="#" class="brand">Spreedly UI</a>
+					<a href="/" class="brand">Spreedly UI</a>
 					<ul class="nav">
 						<li><a href="/gateways"><i class="icon-shopping-cart"></i> Payment Gateways</a></li>
 						<li><a href="/payment_methods"><i class="icon-credit-card"></i> Payment Methods</a></li>
