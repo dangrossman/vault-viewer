@@ -36,11 +36,8 @@ if (empty($_POST)) {
 //Routes
 
 $app->get('/', function() use ($app, $logged_in) {
-    if ($logged_in) {
-        $app->redirect('/gateways');
-    } else {
-        $app->render('login.php');
-    }
+    if ($logged_in) $app->redirect('/gateways');
+    $app->render('login.php');
 });
 
 $app->post('/', function() use ($app) {
