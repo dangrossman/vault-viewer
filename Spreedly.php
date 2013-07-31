@@ -125,6 +125,30 @@ class Spreedly {
 
 	}
 
+	public static function authorize($payment_method_token, $gateway_token, $amount, $order_id = '', $description = '', $ip = '') {
+
+		$url = self::ENDPOINT . 'gateways/' . $gateway_token . '/authorize.xml';
+
+		$amount = round($amount * 100);
+
+		$data = '<transaction>';
+		$data .= '<payment_method_token>' . $payment_method_token . '</payment_method_token>';
+		$data .= '<amount>' . $amount . '</amount>';
+		$data .= '<currency_code>USD</currency_code>';
+		$data .= '<order_id>' . $order_id . '</order_id>';
+		$data .= '<description>' . $description . '</description>';
+		$data .= '<ip>' . $ip . '</ip>';
+		$data .= '</transaction>';
+
+		$xml = $this->post($url, $data);
+		$response = new SimpleXMLElement($xml);
+
+		if ($response && (string)$response->succeeded == 'true')
+			return $xml;
+		return false;
+
+	}	
+
 	public function capture($transaction) {
 
 		$url = self::ENDPOINT . 'transactions/' . $transaction . '/capture.xml';
