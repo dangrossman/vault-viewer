@@ -1,4 +1,4 @@
-### Spreedly UI: A lightweight frontend for the Spreedly Core API
+### Spreedly UI: A lightweight frontend to the Spreedly Core API
 
 ![Spreedly UI](http://i.imgur.com/gipxlf5.png)
 
