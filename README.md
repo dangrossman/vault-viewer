@@ -11,8 +11,10 @@ included Spreedly PHP class that wraps common Spreedly Core API usage.
 ## Installation
 
 Clone or unzip this repository to the document root of a web server configured to serve PHP, 
-such as Apache with mod_php or nginx with php-fpm. There are numerous references to absolute 
-paths/URIs, so you don't place the code in a subfolder of a domain.
+such as Apache with mod_php or nginx with php-fpm. 
+
+There are references to absolute paths/URIs in the HTML, so don't place the code in a subfolder 
+of a domain.
 
 All non-static requests should be directed to `index.php`. A `.htaccess` file that does 
 this for Apache is included.
